@@ -1,3 +1,8 @@
+<?php
+session_start();
+include './core/connection.php'
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -124,6 +129,16 @@
         setTimeout(loadRecentData, 100);
     }
     </script>
+    <!-- <script type="text/javascript">
+    $(document).ready(function() {
+        setInterval(function() {
+            $("#status_lampu").load("index.php");
+            $("#nilai_tegangan").load("index.php");
+            $("#nilai_arus").load("index.php");
+            $("#nilai_LDR").load("index.php");
+        }, 1000)
+    })
+    </script> -->
 </body>
 
 </html>
